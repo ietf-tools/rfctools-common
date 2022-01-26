@@ -1,126 +1,151 @@
-rfctools-common (0.6.1) distribhution(s); urgency=low
+# Changelog
 
-	* Remove module six from the setup
+All notable changes to this project will be documented in this file.
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 24 Jan 2020 12:00:00 -0700
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-rfctools-common (0.6.0) distribhution(s); urgency=low
+## [0.6.1] - 2020-01-24
 
-	* Update to the latest set of schema files
-	* Update the entity definition file with more values
+### Removed
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 10 Oct 2019 12:00:00 -0700
+- Remove module six from the setup
 
-rfctools-common (0.5.17) distribhution(s); urgency=low
+## [0.6.0] - 2019-10-10
 
-	* Remove Python 3.4 from the supported liste
+### Changed
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 16 Aug 2019 12:00:00 -0700
+- Update to the latest set of schema files
+- Update the entity definition file with more values
 
-rfctools-common (0.5.16) distribhution(s); urgency=low
+## [0.5.17] - 2019-08-16
 
-	* Update the RNG schema file from XML2RFC drop v2.23.0
+### Removed
 
--- Jim Schaad <ietf@augustcellars.com>  Mon 1 July 2019 12:00:00 -0700
+- Remove Python 3.4 from the supported liste
 
-rfctools-common (0.5.15) distribhution(s); urgency=low
+## [0.5.16] - 2019-07-01
 
-	* Use the correct function anywhere that we could write out UTF-8
+### Changed
 
--- Jim Schaad <ietf@augustcellars.com>  Mon 27 May 2019 12:00:00 -0700
+- Update the RNG schema file from XML2RFC drop v2.23.0
 
-rfctools-common (0.5.14) distribhution(s); urgency=low
+## [0.5.15] - 2019-05-27
 
-	* Merge in some of the XML2RFC changes to these files
-	* Setup to allow for the input coming from stdin
-	* Clean things up so that pyflakes will pass, still has problems with PEP8
+### Changed
 
--- Jim Schaad <ietf@augustcellars.com>  Sun 21 Apr 2019 12:00:00 -0700
+- Use the correct function anywhere that we could write out UTF-8
 
-rfctools-common (0.5.12) distribution(s); urgency=low
+## [0.5.14] - 2019-04-21
 
-	* Don't try and compress whitespace in entity nodes
+### Changed
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 25 Jan 2019 12:00:00 -0700
+- Merge in some of the XML2RFC changes to these files
+- Setup to allow for the input coming from stdin
+- Clean things up so that pyflakes will pass, still has problems with PEP8
 
-rfctools-common (0.5.11) distribution(s); urgency=low
+## [0.5.12] - 2019-01-25
 
-	* Add the info logging function for another output type
-	* Add option to surpress populating default attributes from the DTD
+### Changed
 
--- Jim Schaad <ietf@augustcellars.com>  Tue 1 Jan 2019 12:00:00 -0700
+- Don't try and compress whitespace in entity nodes
 
-rfctools-common (0.5.10) distribution(s); urgency=low
+## [0.5.11] - 2019-01-01
 
-	* The no xinclude option is expanded to include processing <?rfc include=""?> PI
+### Added
 
--- Jim Schaad <ietf@augustcellars.com>  XXX 2 Sept 2018 12:00:00 -0700
+- Add the info logging function for another output type
+- Add option to surpress populating default attributes from the DTD
 
-rfctools-common (0.5.6) distribution(s); urgency=low
+## [0.5.10] - 2018-09-02
 
-	* Add option to not resolve entities for XML Linting
-	* Fix problem with installing on a clean platform
+### Changed
 
--- Jim Schaad <ietf@augustcellars.com>  Mon 2 July 2018 12:00:00 -0700
+- The no xinclude option is expanded to include processing `<?rfc include=""?>` PI
 
-rfctools-common (0.5.5) distribution(s); urgency=low
+## [0.5.6] - 2018-07-02
 
-	* Correct problem with displaying utf8 strings
+### Added
 
--- Jim Schaad <ietf@augustcellars.com>  Tue 12 JUNE 2018 12:00:00 -0700
+- Add option to not resolve entities for XML Linting
 
-rfctools-common (0.5.3) distribution(s); urgency=low
+### Changed
 
-	* Copy the cache code in for URLs on .dtd and .ent files, this allows for
-	  a DTD to be grabbed from the network
-	* Switch to using resolve_string in those cases where we have cached the file
-	  so that futher includes have the correct path when getting resolved.
+- Fix problem with installing on a clean platform
 
--- Jim Schaad <ietf@augustcellars.com>  Fri XX APR 2018 12:00:00 -0700
+## [0.5.5] - 2018-06-12
 
-rfctools-common (0.5.2) distribution(s); urgency=low
+### Changed
 
-	* Distribute the old rfc 2629 dtd and ent files so that v2 files parse correctly
-	* Correct processing so that we can play games with where to search file files.
-	  If the file does not exist and the source directory is given then strip the
-	  path so that we will search in different directories for the file.
+- Correct problem with displaying utf8 strings
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 30 MAR 2018 12:00:00 -0700
+## [0.5.3] - 2018-04-01
 
-rfctools-common (0.5.1) distribution(s); urgency=low
+### Changed
 
-	* Setup to publish to PyPI
+- Copy the cache code in for URLs on .dtd and .ent files, this allows for a DTD to be grabbed from the network
+- Switch to using resolve_string in those cases where we have cached the file so that futher includes have the correct path when getting resolved.
 
--- Jim Schaad <ietf@augustcellars.com>  Sun XX MAR 2018 19:00:00 -0800
+## [0.5.2] - 2018-03-30
 
-rfctools-common (0.5.0) distribution(s); urgency=urgency
+### Changed
 
-	* Setup log routines so that UTF-8 strings can be written on
-	  all consoles.  This is a problem as Python v2 thinks consoles
-	  are written assumed to be ASCII and for Windows it is the code
-	  page of the console.  Pipes have a third method of making this decision
-	* Swap the order of two attributes to match the order in the
-	  xmlrfc v2 to v3 upgrade program.
+- Distribute the old rfc 2629 dtd and ent files so that v2 files parse correctly
+- Correct processing so that we can play games with where to search file files. If the file does not exist and the source directory is given then strip the path so that we will search in different directories for the file.
 
--- Jim Schaad <ietf@augustcellars.com>  Sun 25 Feb 2018 19:00:00 -0800
+## [0.5.1] - 2018-03-01
 
-rfctools-common (0.0.3) distribution(s); urgency=urgency
+### Added
 
-	* For python 3.x read file as binary not text, deals with UTF-8 problems
-	* Include RFC2629 DTD for the XMLDIFF so that we can load old xml files
+- Setup to publish to PyPI
 
--- Jim Schaad <ietf@augustcellars.com>  Sun 11 Feb 2018 19:00:00 -0800
+## [0.5.0] - 2018-02-25
 
-rfctools-common (0.0.2) distribution(s); urgency=urgency
+### Changed
 
-	* Add additional parameter to logging functions
-	* Correct README.rst file, should be able to be released publicly
+- Setup log routines so that UTF-8 strings can be written on all consoles.  This is a problem as Python v2 thinks consoles are written assumed to be ASCII and for Windows it is the code page of the console.  Pipes have a third method of making this decision
+- Swap the order of two attributes to match the order in the xmlrfc v2 to v3 upgrade program.
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 26 Jan 2018 09:00:00 -0800
+## [0.0.3] - 2018-02-11
 
-rfctools-common (0.0.1) distribution(s); urgency=urgency
+### Added
 
-	* Create the initial simple version
-	* Create python setup program
+- Include RFC2629 DTD for the XMLDIFF so that we can load old xml files
 
--- Jim Schaad <ietf@augustcellars.com>  Fri 05 Jan 2018 12:00:00 -0800
+### Changed
+
+- For python 3.x read file as binary not text, deals with UTF-8 problems
+
+## [0.0.2] - 2018-01-26
+
+### Added
+
+- Add additional parameter to logging functions
+- Correct README.rst file, should be able to be released publicly
+
+## [0.0.1] - 2018-01-05
+
+### Added
+
+- Create the initial simple version
+- Create python setup program
+
+
+[0.6.1]: https://github.com/ietf-tools/rfctools-common/compare/0.6.0...0.6.1
+[0.6.0]: https://github.com/ietf-tools/rfctools-common/compare/0.5.17...0.6.0
+[0.5.17]: https://github.com/ietf-tools/rfctools-common/compare/0.5.16...0.5.17
+[0.5.16]: https://github.com/ietf-tools/rfctools-common/compare/0.5.15...0.5.16
+[0.5.15]: https://github.com/ietf-tools/rfctools-common/compare/0.5.14...0.5.15
+[0.5.14]: https://github.com/ietf-tools/rfctools-common/compare/0.5.12...0.5.14
+[0.5.12]: https://github.com/ietf-tools/rfctools-common/compare/0.5.11...0.5.12
+[0.5.11]: https://github.com/ietf-tools/rfctools-common/compare/0.5.10...0.5.11
+[0.5.10]: https://github.com/ietf-tools/rfctools-common/compare/0.5.6...0.5.10
+[0.5.6]: https://github.com/ietf-tools/rfctools-common/compare/0.5.5...0.5.6
+[0.5.5]: https://github.com/ietf-tools/rfctools-common/compare/0.5.3...0.5.5
+[0.5.3]: https://github.com/ietf-tools/rfctools-common/compare/0.5.2...0.5.3
+[0.5.2]: https://github.com/ietf-tools/rfctools-common/compare/0.5.1...0.5.2
+[0.5.1]: https://github.com/ietf-tools/rfctools-common/compare/0.5.0...0.5.1
+[0.5.0]: https://github.com/ietf-tools/rfctools-common/compare/0.0.3...0.5.0
+[0.0.3]: https://github.com/ietf-tools/rfctools-common/compare/0.0.2...0.0.3
+[0.0.2]: https://github.com/ietf-tools/rfctools-common/compare/0.0.1...0.0.2
+[0.0.1]: https://github.com/ietf-tools/rfctools-common/releases/tag/0.0.1
