@@ -1,6 +1,6 @@
 <div align="center">
     
-<img src="https://raw.githubusercontent.com/ietf-tools/common/main/assets/logos/ietf-rfctools-common-logo.svg" alt="IETF RFCTOOLS-COMMON" width="600" />
+<img src="https://raw.githubusercontent.com/ietf-tools/common/main/assets/logos/rfctools-common.svg" alt="IETF RFCTOOLS-COMMON" width="600" />
     
 [![Release](https://img.shields.io/github/release/ietf-tools/rfctools-common.svg?style=flat&maxAge=360)](https://github.com/ietf-tools/rfctools-common/releases)
 [![License](https://img.shields.io/github/license/ietf-tools/rfctools-common)](https://github.com/ietf-tools/rfctools-common/blob/main/LICENSE)
