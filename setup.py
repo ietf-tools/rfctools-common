@@ -3,7 +3,6 @@
 # Copyright The IETF Trust 2018-2019, All Rights Reserved
 # --------------------------------------------------
 
-import re
 from setuptools import setup, find_packages
 from codecs import open
 from os import path
@@ -12,7 +11,7 @@ import rfctools_common
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the README file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as file:
+with open(path.join(here, 'README.md'), encoding='utf-8') as file:
     long_description = file.read()
     long_description = long_description.replace('\r', '')
 
@@ -25,49 +24,7 @@ with open(path.join(here, 'MANIFEST.in'), encoding='utf-8') as file:
     extra_files = [l.split()[1] for l in file.read().splitlines() if l]
 
 
-def parse(changelog):
-    ver_line = "^([a-z0-9+-]+) \(([^)]+)\)(.*?) *$"
-    sig_line = "^ ?-- ([^<]+) <([^>]+)>  (.*?) *$"
 
-    entries = []
-    if isinstance(changelog, type('')):
-        changelog = open(changelog, mode='rU', encoding='utf-8')
-    for line in changelog:
-        if re.match(ver_line, line):
-            package, version, rest = re.match(ver_line, line).groups()
-            entry = {}
-            entry["package"] = package
-            entry["version"] = version
-            entry["logentry"] = ""
-        elif re.match(sig_line, line):
-            author, email, date = re.match(sig_line, line).groups()
-            entry["author"] = author
-            entry["email"] = email
-            entry["datetime"] = date
-            entry["date"] = " ".join(date.split()[:3])
-
-            entries += [entry]
-        else:
-            entry["logentry"] += line.rstrip() + '\n'
-    changelog.close()
-    return entries
-
-
-changelog_entry_template = """
-Version %(version)s (%(date)s)
-------------------------------------------------
-
-%(logentry)s
-
-"""
-
-long_description += """
-Changelog
-=========
-
-""" + "\n".join([changelog_entry_template % entry for entry in parse("changelog")[:3]])
-
-long_description = long_description.replace('\r', '')
 
 setup(
     name='rfctools_common',
@@ -117,7 +74,6 @@ setup(
     package_data={
         'rfctools-common': ['templates/*']
     },
-    include_package_data=True,
 
     zip_safe=False
 )
