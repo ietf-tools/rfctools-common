@@ -3,6 +3,6 @@
 # --------------------------------------------------
 
 # Static values
-__version__  = '0.6.1'
+__version__ = '0.7.0'
 NAME         = 'rfctools_common'
 VERSION      = [ int(i) if i.isdigit() else i for i in __version__.split('.') ]
