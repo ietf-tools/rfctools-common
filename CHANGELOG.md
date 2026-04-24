@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.7.0] - 2026-04-24
+### :sparkles: New Features
+- [`b75878f`](https://github.com/ietf-tools/rfctools-common/commit/b75878f9dfaf69b90e3c8a9c6546073cfc8fa889) - Migrate to pyproject.toml *(PR [#17](https://github.com/ietf-tools/rfctools-common/pull/17) by [@bkmgit](https://github.com/bkmgit))*
+  - :arrow_lower_right: *addresses issue [#16](https://github.com/ietf-tools/rfctools-common/issues/16) opened by [@bkmgit](https://github.com/bkmgit)*
+
+### :bug: Bug Fixes
+- [`a787ad6`](https://github.com/ietf-tools/rfctools-common/commit/a787ad6ba78be29a47bc0d0b61e64e78c3d5dd90) - Remove old changelog parsing and MANIFEST.in *(PR [#11](https://github.com/ietf-tools/rfctools-common/pull/11) by [@moonshiner](https://github.com/moonshiner))*
+
+### :construction_worker: Build System
+- [`d39ee8b`](https://github.com/ietf-tools/rfctools-common/commit/d39ee8bcee02365c39b853f85ff848501e2145dd) - Add 'pyflakes' to test dependencies *(PR [#18](https://github.com/ietf-tools/rfctools-common/pull/18) by [@kesara](https://github.com/kesara))*
+- [`2f8b740`](https://github.com/ietf-tools/rfctools-common/commit/2f8b740e02754006111340991a7700fe124d2362) - Add PyPI publish workflow *(PR [#20](https://github.com/ietf-tools/rfctools-common/pull/20) by [@kesara](https://github.com/kesara))*
+  - :arrow_lower_right: *addresses issue [#19](https://github.com/ietf-tools/rfctools-common/issues/19) opened by [@kesara](https://github.com/kesara)*
+
+### :memo: Documentation Changes
+- [`92ce001`](https://github.com/ietf-tools/rfctools-common/commit/92ce0019f8039895669f8dcb456423699632d78b) - reformat README.md *(commit by [@NGPixel](https://github.com/NGPixel))*
+- [`bd0b04b`](https://github.com/ietf-tools/rfctools-common/commit/bd0b04b3dca4b0ba7d12807e059bab800df1adc6) - fix LICENSE *(commit by [@NGPixel](https://github.com/NGPixel))*
+- [`ec512c4`](https://github.com/ietf-tools/rfctools-common/commit/ec512c4ee2dd68413654a84f26f0ae04c712ac21) - reformat CHANGELOG.md *(commit by [@NGPixel](https://github.com/NGPixel))*
+- [`7a4c929`](https://github.com/ietf-tools/rfctools-common/commit/7a4c929d726ba4dd55aad4e4b2da70638381dc1f) - update README logo *(commit by [@NGPixel](https://github.com/NGPixel))*
+
+### :wrench: Chores
+- [`0a4f7a7`](https://github.com/ietf-tools/rfctools-common/commit/0a4f7a7a1a00cb24b8ddd87f3f16f8e9eabdb4f0) - exclude non-rfctools-common files *(commit by [@NGPixel](https://github.com/NGPixel))*
+
+
 ## [0.6.1] - 2020-01-24
 
 ### Removed
@@ -149,3 +172,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [0.0.3]: https://github.com/ietf-tools/rfctools-common/compare/0.0.2...0.0.3
 [0.0.2]: https://github.com/ietf-tools/rfctools-common/compare/0.0.1...0.0.2
 [0.0.1]: https://github.com/ietf-tools/rfctools-common/releases/tag/0.0.1
+[v0.7.0]: https://github.com/ietf-tools/rfctools-common/compare/0.6.2...v0.7.0
