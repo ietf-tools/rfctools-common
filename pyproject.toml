@@ -1,0 +1,64 @@
+# -------------------------------------------------------
+# Copyright The IETF Trust 2018-2026, All Rights Reserved
+# -------------------------------------------------------
+
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfctools_common"
+dynamic = ["version"]
+authors = [
+  {name = "Jim Schaad", email = "ietf@augustcellars.com"},
+]
+description = "Utility functions used by some of the RFC Editor tools"
+keywords = ["RFC", "common"]
+readme ="README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Other Audience',
+    'Topic :: Text Processing',
+    'Topic :: Text Processing :: Markup :: XML',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
+]
+dependencies = [
+    "lxml>=4.1.1",
+    "requests>=2.5.0",
+    "six",
+]
+
+[project.urls]
+homepage = "https://github.com/ietf-tools/rfctools-common"
+source = "https://github.com/ietf-tools/rfctools-common"
+issues = "https://github.com/ietf-tools/rfctools-common/issues"
+releasenotes = "https://github.com/ietf-tools/rfctools-common/releases"
+
+[project.optional-dependencies]
+test = [
+	"pycodestyle",
+]
+
+[tool.setuptools]
+packages = ["rfctools_common"]
+include-package-data = true
+
+[tools.setuptools.packages.find]
+exclude = [
+    "contrib",
+    "docs",
+    "Tests",
+]
+
+[tool.setuptools.package-data]
+rfctools-common = ["templates/*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "rfctools_common.__version__"}
